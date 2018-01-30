@@ -1,0 +1,34 @@
+body,html{
+  width: 100%;
+  height: 100%
+}
+
+.main-header{
+  height: 70%;
+  background: url('../images/main.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: left bottom;
+  transform: skewY(-3deg);
+
+}
+.my-image{
+  width: 200px;
+  position: relative;
+  bottom: -85%;
+  transform: skewY(3deg);
+  z-index: 1
+}
+
+.name{
+  position: relative;
+  bottom: -80%;
+  transform: skewY(3deg);
+}
+
+.profile{
+  position: relative;
+  bottom: -78%;
+  transform: skewY(3deg);
+}
