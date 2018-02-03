@@ -1,6 +1,63 @@
 <!doctype html>
 <html lang="en">
 
+<script>
+  window.onload = function() {
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      theme: "dark1", // "light1", "light2", "dark1", "dark2"
+      title: {
+        text: "Top Oil Reserves"
+      },
+      axisY: {
+        title: "Reserves(MMbbl)"
+      },
+      data: [{
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+        legendText: "MMbbl = one million barrels",
+        dataPoints: [{
+            y: 300878,
+            label: "Venezuela"
+          },
+          {
+            y: 266455,
+            label: "Saudi"
+          },
+          {
+            y: 169709,
+            label: "Canada"
+          },
+          {
+            y: 158400,
+            label: "Iran"
+          },
+          {
+            y: 142503,
+            label: "Iraq"
+          },
+          {
+            y: 101500,
+            label: "Kuwait"
+          },
+          {
+            y: 97800,
+            label: "UAE"
+          },
+          {
+            y: 80000,
+            label: "Russia"
+          }
+        ]
+      }]
+    });
+    chart.render();
+
+  }
+</script>
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -18,28 +75,32 @@
   <div class="container-fluid main-header">
     <h3 class="text-white">Hello, World</h3>
     <img src="./images/main.jpeg" alt="archu" class="rounded img-thumbnail img-fluid mx-auto d-block my-image">
-    <h1 class="display-1 text-white text-center">I'm Anuj Mody</h1>
-    <h3 class="px-5 text-white">Mobile Developer</p>
-      <div class="row text-center">
-        <div class="col-sm-6 xs-my-20 col-md-6">
+    <h1 class="display-1 text-center my-name">I'm Anuj Mody</h1>
+    <div class="row">
+      <h4 class="text-white designation">Mobile Developer</p>
+        <h4 class="text-white designation">&</p>
+      <h4 class="text-white designation">FrontEnd Developer</p>
+    </div>
+      <div class="text-center icons_header">
+        <div class="col">
             <i class="fab fa-facebook-f icons"></i>
-        </div>
-        <div class="col-sm-6 xs-my-20 col-md-6">
-            <i class="fab fa-facebook-f icons"></i>
+            <i class="fab fa-twitter icons"></i>
+            <i class="fab fa-linkedin icons"></i>
         </div>
       </div>
-      <!-- <i class="fab fa-facebook-f icons"></i>
-      <i class="fab fa-facebook-f icons"></i>
-      <i class="fab fa-facebook-f icons"></i>
-      <i class="fab fa-facebook-f icons"></i> -->
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid text-center my-skills-main">
+
+    <div class="test"></div>
+
   </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 
 </html>
